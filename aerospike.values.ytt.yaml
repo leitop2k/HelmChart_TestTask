@@ -1,0 +1,34 @@
+#@data/values
+---
+replica: "invalid"
+namespace: "zenquiz-aerospike"
+clusterNamespace: "memory"
+clusterName: "zenquiz"
+externalPortPrefix: "unknown"
+blockSsd: false
+blockSsds: []
+storageClassName: ""
+storageSizes: []
+replicationFactor: "3"
+memGb: "10"
+defaultTtl: "24h"
+nsupPeriod: "1d"
+resourcesRequestsMemory: "12Gi"
+resourcesRequestsCpu: "100m"
+resourcesLimitsMemory: "15Gi"
+resourcesLimitsCpu: "12"
+hostNetwork: false
+servicePort: "3000"
+hbAddress: "any"
+hbPort: "3002"
+fabricAddress: "any"
+fabricPort: "3001"
+infoAddress: "any"
+infoPort: "3003"
+image: "aerospike:ce-6.0.0.2"
+ip: []
+nodeSelectors: [
+"de1-svc-as-1",
+"de1-svc-as-2"
+]
+writeBlockSize: "1M"
